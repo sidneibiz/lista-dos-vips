@@ -1,0 +1,60 @@
+.toolbar-style {
+  background: #383B4B;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  box-shadow: 3px 4px 13px 0px #1d1717;
+}
+
+.toolbar-title {
+  flex: 1 1 auto;
+}
+
+.toolbar-logo {
+  height: 50px;
+  padding-right: 10px;
+}
+
+.toolbar-user-photo {
+  height: 50px;
+}
+
+.toolbar-bottom {
+  width: 100%;
+  margin-top: 60px;
+  position: absolute;
+  height: 4px;
+  background: #E78D45;
+  z-index: 999;
+  box-shadow: 4px 2px 13px 0px #1d1717;
+}
+
+.toolbar-button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: stretch;
+  width: 100%;
+  height: 40px;
+  box-shadow: 4px -6px 20px 8px #1d1717;
+}
+
+.sidenav-container {
+  position: absolute;
+  top: 80px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+}

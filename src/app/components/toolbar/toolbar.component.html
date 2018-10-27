@@ -1,0 +1,19 @@
+<ng-container>
+  <mat-toolbar class="toolbar-style">
+    <mat-toolbar-row class="style-toolbar">
+      <img class="toolbar-logo" src="assets/crown.svg">
+      <span class="toolbar-title">{{title}}</span>
+      <img class="toolbar-user-photo" src="assets/man.svg" [matMenuTriggerFor]="menu">
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="btn" *ngFor="let btnToolbar of toolbarButtons;">
+          <mat-icon>{{btnToolbar.icon}}</mat-icon>
+          <span>{{btnToolbar.name}}</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-toolbar class="toolbar-bottom"></mat-toolbar>
+  <div class="sidenav-container">
+    <router-outlet></router-outlet>
+  </div>
+</ng-container>
